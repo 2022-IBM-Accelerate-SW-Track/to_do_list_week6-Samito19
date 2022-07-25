@@ -1,0 +1,9 @@
+.navbar-logout-button {
+    background-color: #212529;
+    border: none;
+    color: #9b9d9f;
+}
+
+.navbar-logout-button:hover {
+    color: #c2c2c3;
+}

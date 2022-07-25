@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import {Navbar, Nav, Container} from 'react-bootstrap'
+import * as api from "../../services/api";
 
+import "./NavbarComp.css"
 import {
     BrowserRouter as Router,
     Routes,
@@ -26,6 +28,7 @@ export default class NavbarComp extends Component {
                         <Nav.Link as={Link} to={"/about"}>About</Nav.Link>
                         <Nav.Link as={Link} to={"/TodoPage"}>TodoPage</Nav.Link>
                     </Nav>
+                    <button className="navbar-logout-button" onClick={async () => {await api.authenticate()}}>Log out</button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
